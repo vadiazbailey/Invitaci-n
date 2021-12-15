@@ -13,13 +13,28 @@
 </head>
 <body>
     <!--Play de la musica-->
-    <div class="botonPlay"></div>
+    <div class="botonPlay">
+        <div class="botón" onclick="this.classList.toggle('active')">
+            <div class="fondo" x="0" y="0" width="200" height="200"></div>
+            <div class="icono" width="200" height="200">
+              <div class="parte izquierda" x="0" y="0" width="200" height="200" fill="#fff"></div>
+              <div class="parte derecha" x="0" y="0" width="200" height="200" fill="#fff"></div>
+            </div>
+            <div class="puntero"></div>
+          </div>
+        <p>Dale play</p>
+    </div>
 
     <!--Nombres de la pareja y la fecha-->
-    <div class="nombres-Fecha"></div>
+    <div class="nombres-fecha">
+        <p class="nombre">Lourdes y Nahuel</p>
+        <p class="fecha">18-02-2022</p>
+    </div>
 
     <!--FotoPrincipal-->
-    <div class="imagenPrincipal"></div>
+    <div class="fotoPrincipal">
+        <img src="images/pareja.jpeg">
+    </div>
 
     <!--CuentaAtras-->
     <div class="contador"></div>
@@ -30,7 +45,9 @@
     </div>
 
     <!--Galeria de fotos-->
-    <div class="galeriaFotos"></div>
+    <div class="galeriaFotos">
+        <h3>Galeria de Fotos</h3>
+    </div>
 
     <!--Card de ubicacion Iglesia-->
 
