@@ -14,7 +14,10 @@
 <body>
     <!--Play de la musica-->
     <div class="botonPlay">
-        <div class="botón" onclick="this.classList.toggle('active')">
+        <div class="botón" onclick="this.classList.toggle('active'); togglePlay()">
+            <audio id="cancion">
+                <source  src="musica/Sugar - Maroon 5 (Audio).mp3" type="audio/mp3">
+            </audio>
             <div class="fondo" x="0" y="0" width="200" height="200"></div>
             <div class="icono" width="200" height="200">
               <div class="parte izquierda" x="0" y="0" width="200" height="200" fill="#fff"></div>
@@ -62,5 +65,7 @@
     <!--Foto despedida-->
 
     <!--Texto despedida-->
+
+<script src="js/musica.js"></script>
 </body>
 </html>

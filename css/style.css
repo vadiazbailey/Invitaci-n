@@ -391,6 +391,10 @@ body{
     margin-bottom: 30px;
 }
 
+.frasePrincipal p{
+    text-align: center;
+}
+
 /*Galeria de fotos*/
 
 /*Card de ubicacion Iglesia*/
