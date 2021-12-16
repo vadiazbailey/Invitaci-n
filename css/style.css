@@ -420,4 +420,10 @@ body{
     .botonPlay p{
         margin-left: -15px;
     }
+
+    .fotoPrincipal img {
+        width: 70vw;
+        aspect-ratio: 1;
+        border: 2px solid #7fffd4;
+    }
 }
