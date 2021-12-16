@@ -11,6 +11,9 @@ body{
     flex-direction: column;
     align-content: space-around;
     align-items: center;
+    background: url(../images/fondo.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
 }
 
 /*Play de la musica*/
@@ -384,6 +387,8 @@ body{
 /*FrasePrincipal*/
 .frasePrincipal{
     width: 50vw;
+    background: rgba(255, 255, 255, 0.4);
+    
     border: solid 1px #7fffd4;
     padding: 38px;
     box-shadow: 4px 4px 4px #5a6a65;
@@ -412,6 +417,17 @@ body{
 /*Texto despedida*/
 
 @media (min-width: 320px) and (max-width: 480px){
+    body{
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        align-items: center;
+        background-image: url(../images/fondoMobile.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
     .botonPlay{
         margin-top:60px;
         margin-left: -15vw;
