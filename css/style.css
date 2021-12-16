@@ -20,7 +20,7 @@ body{
     align-items: center;
     
     margin-top: 45px;
-    margin-left: -50vw;
+    margin-left: -45vw;
 }
 
 .botón {
@@ -410,3 +410,14 @@ body{
 /*Foto despedida*/
 
 /*Texto despedida*/
+
+@media (min-width: 320px) and (max-width: 480px){
+    .botonPlay{
+        margin-top:60px;
+        margin-left: -15vw;
+        margin-bottom: -20px;
+    }
+    .botonPlay p{
+        margin-left: -15px;
+    }
+}
