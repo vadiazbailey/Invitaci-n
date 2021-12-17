@@ -391,11 +391,11 @@ body{
 /*FrasePrincipal*/
 .frasePrincipal{
     width: 50vw;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.55);
     
     border: solid 1px #7fffd4;
     padding: 38px;
-    box-shadow: 4px 4px 4px #5a6a65;
+    box-shadow: 4px 4px 12px #5a6a65;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -421,27 +421,50 @@ body{
 
 /*Card de ubicacion Iglesia*/
 .card{
-  padding-top: 20px;
+  padding-top: 45px;
   display: flex;
-    width: 25vw;
-    background: rgba(255, 255, 255, 0.8);
-    border: solid 1px black;
-    border-radius: 4%;
-    align-items: center;
-    flex-direction: column;
-    align-content: center;
+  width: 25vw;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 4px 4px 4px #5a6a65;
+  border: solid 1px #7fffd4;
+  border-radius: 4%;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
 }
 
 .card div{
-    display: flex;
-    margin: 10px 10px 40px 10px;
-    flex-direction: column;
-    align-items: center;
+  padding-top: 10px;
+  display: flex;
+  margin: 10px 10px 40px 10px;
+  flex-direction: column;
+  align-items: center;
 }
 
 small{
   font-size: 20px;
   margin-bottom: 10px;
+}
+
+.card button{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 3px 30px 3px 30px;
+  background: #7fffd4ce;
+  border-color: #60c8a6;
+  border-radius: 5%;
+}
+
+.card button a{
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  color: rgb(97, 63, 63);
+}
+
+.card img{
+  border: 2px solid #605E5E;
+  border-radius: 50%;
 }
 /*Card de ubicacion de la Fiesta*/
 
@@ -467,16 +490,16 @@ small{
     }
 
     .botonPlay{
-        margin-top:60px;
-        margin-left: -15vw;
-        margin-bottom: -20px;
+        margin-top:62px;
+        margin-left: -7vw;
+        margin-bottom: -25px;
     }
     .botonPlay p{
         margin-left: -15px;
     }
 
     .fotoPrincipal img {
-        width: 70vw;
+        width: 85vw;
         aspect-ratio: 1;
         border: 2px solid #7fffd4;
     }
@@ -487,9 +510,9 @@ small{
     }
 
     .card{
-      width: 80vw;
+      width: 75vw;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 20px;
+      margin-bottom: 35px;
     }
 }
