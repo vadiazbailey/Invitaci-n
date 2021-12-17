@@ -450,7 +450,7 @@ small{
   margin-top: 25px;
   margin-bottom: 25px;
   padding: 3px 30px 3px 30px;
-  background: #7fffd4ce;
+  background: #72e4bece;
   border-color: #60c8a6;
   border-radius: 5%;
 }
@@ -459,7 +459,7 @@ small{
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-size: 13px;
-  color: rgb(97, 63, 63);
+  color: white;
 }
 
 .card img{
