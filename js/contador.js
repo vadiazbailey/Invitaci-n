@@ -1,6 +1,6 @@
 "use strict"
 
-var countDownDate = new Date(1645196400000).getTime();
+var countDownDate = new Date(1645227900000).getTime();
 
 var x = setInterval(function() {
 
@@ -16,13 +16,13 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the result in the element with id="demo"
+  // Display the result in the element with class="contador"
   document.querySelector(".contador").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
 
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.querySelector(".contador").innerHTML = "EXPIRED";
+    document.querySelector(".contador").innerHTML = "ES HOY!";
   }
 }, 1000);

@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-size: 25px;
-    font-family: 'Grand Hotel', cursive;
+    font-family: 'Bad Script', cursive;
     color: #605E5E;
 }
 
@@ -367,25 +367,26 @@ body{
 }
 
 .nombre{
-    font-size: 50px;
-    margin-bottom: 5px;
+    font-size: 75px;
+    margin-top: -16px;
 }
 
 .fecha{
-    font-size: 22px;
+    font-size: 25px;
+    margin-top: -12px;
 }
 
 /*FotoPrincipal*/
 .fotoPrincipal img{
     width: 40vw;
-    aspect-ratio: 1;
-
-    border: 2px solid #7fffd4;
+    border: 5px solid #7fffd4;
+    margin-top: -20px;
 }
 /*CuentaAtras*/
 .contador{
   margin-top:30px;
   font-size: 50px;
+  margin-bottom: 30px;
 }
 
 /*FrasePrincipal*/
@@ -407,9 +408,24 @@ body{
 /*Galeria de fotos*/
 .galeriaFotos p{
   font-size: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 52px;
+  text-align: center;
+  margin-top: 30px;
 }
 
+.fotos{
+  width: 100vw;
+  margin-bottom: 45px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.fotos img{
+  width: 28vw;
+  height: 66vh;
+  padding: 0px 10px 0px 10px;
+  border-radius: 36px;
+}
 /*Ubicaciones*/
 .ubicaciones{
   width: 100vw;
@@ -421,7 +437,8 @@ body{
 
 /*Card de ubicacion Iglesia*/
 .card{
-  padding-top: 45px;
+  padding: 45px 10px 0 10px;
+  margin-bottom: 50px;
   display: flex;
   width: 25vw;
   background: rgba(255, 255, 255, 0.8);
@@ -439,6 +456,7 @@ body{
   margin: 10px 10px 40px 10px;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 small{
@@ -448,11 +466,15 @@ small{
 
 .card button{
   margin-top: 25px;
-  margin-bottom: 25px;
-  padding: 3px 30px 3px 30px;
+  margin-bottom: 45px;
+  padding: 3px 60px 10px 60px;
   background: #72e4bece;
   border-color: #60c8a6;
   border-radius: 5%;
+}
+
+.card button:hover{
+  background: #56af91ce;
 }
 
 .card button a{
@@ -469,13 +491,82 @@ small{
 /*Card de ubicacion de la Fiesta*/
 
 /*Card del #Hashtag del evento*/
-
 /*Card de codigo de vestimenta*/
+.hashYcodigo{
+  display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+}
 
+.hashYcodigo .card{
+  width: 35vw;
+}
+
+#insta, #regalo, #notas{
+  border:none;
+  border-radius:0px;
+}
+
+#hashtag{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+    font-family: 'Raleway', sans-serif;
+  background-color: rgb(127 255 212 / 75%);
+  color: white;
+  border-radius:4%;
+}
+
+.aclaracion{
+  text-decoration: underline;
+  margin: 80px 30px 0 30px;
+  font-size: 25px;
+}
+
+/*card del regalo*/
+
+.regalo, .confirmacion{
+  width: 55vw;
+}
 /*Card de confirmacion*/
+div .botones{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 0;
+  justify-content: space-evenly;
+}
 
+div .botones button{
+  margin-bottom: 10px;
+}
 /*Foto despedida*/
+/*.fotoFinal{
+  display: flex;
+  width: 50.5vw;
+  height: 74vh;
+  background: url("../images/galeria/final.jpg");
+  background-size: contain;
+  justify-content: center;
 
+  margin-bottom:30px;
+}*/
+
+.fotoFinal img{
+  border: 5px solid #7fffd4;
+}
+
+.fotoFinal p{
+  text-align: center;
+  color: white;
+  margin-bottom: 402px;
+  font-size: 33px;
+}
+
+.fotoFinal p span{
+  color:yellow;
+}
 /*Texto despedida*/
 
 @media (min-width: 320px) and (max-width: 480px){
@@ -490,12 +581,33 @@ small{
     }
 
     .botonPlay{
-        margin-top:62px;
-        margin-left: -7vw;
-        margin-bottom: -25px;
+      margin-top: 31px;
+      margin-left: -10vw;
+      margin-bottom: -25px;
     }
+
     .botonPlay p{
         margin-left: -15px;
+    }
+
+    .nombre{
+      font-size: 47px;
+      margin-top: -15px;
+    }
+
+    .contador{
+      margin-top: 5px;
+      font-size: 40px;
+      margin-bottom: 5px;
+    }
+
+    .frasePrincipal {
+      width: 50vw;
+      background: rgba(255, 255, 255, 0.55);
+      border: solid 1px #7fffd4;
+      padding: 38px;
+      box-shadow: 4px 4px 12px #5a6a65;
+      margin-bottom: 30px;
     }
 
     .fotoPrincipal img {
@@ -504,6 +616,27 @@ small{
         border: 2px solid #7fffd4;
     }
 
+    .fotos {
+      width: 100vw;
+      margin-bottom: 45px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .fotos img {
+    width: 80vw;
+    height: 66vh;
+    border-radius: 36px;
+    margin-bottom: 30px;
+  }
+
+  .galeriaFotos p {
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: 3px;
+  }
     .ubicaciones{
       display: flex;
       flex-direction: column;
@@ -514,5 +647,36 @@ small{
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 35px;
+    }
+
+    .hashYcodigo{
+      flex-direction: column;
+    }
+
+    .hashYcodigo .card{
+      width:75vw;
+    }
+
+    div .botones{
+      flex-direction: column;
+    }
+
+    .fotoFinal{
+      width:90vw;
+      height: 38vh;
+      margin-bottom: 30px;
+    }
+
+    .fotoFinal p{
+      font-size: 16px;
+      margin-bottom: 193px;
+    }
+
+    .fotoFinal p span{
+      font-size: 25px;
+    }
+    .fotoFinal img{
+      width: 97%;
+      margin-bottom: 15px;
     }
 }
