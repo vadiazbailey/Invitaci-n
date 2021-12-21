@@ -467,10 +467,12 @@ small{
 .card button{
   margin-top: 25px;
   margin-bottom: 45px;
-  padding: 3px 60px 10px 60px;
+  padding: 15px 50px 15px 40px;
   background: #72e4bece;
   border-color: #60c8a6;
   border-radius: 5%;
+  display: flex;
+  align-items: center;
 }
 
 .card button:hover{
@@ -482,6 +484,14 @@ small{
   font-family: 'Raleway', sans-serif;
   font-size: 13px;
   color: white;
+}
+
+.card button .iconoBoton{
+  border:none;
+  border-radius:0;
+  color:white;
+  height: 25px;
+  margin-right: 10px;
 }
 
 .card img{
@@ -568,7 +578,15 @@ div .botones button{
   color:yellow;
 }
 /*Texto despedida*/
+.textoDespedida{
+  text-align: center;
+  margin-bottom:30px;
+}
 
+.textoDespedida p{
+  color: #683a3a;
+  font-size: 40px;
+}
 @media (min-width: 320px) and (max-width: 480px){
     body{
         display: flex;
@@ -678,5 +696,8 @@ div .botones button{
     .fotoFinal img{
       width: 97%;
       margin-bottom: 15px;
+    }
+    .textoDespedida{
+      margin-bottom: 110px;
     }
 }
