@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./flipdown-master/src/flipdown.css">
+    <script src="flipdown-master/src/flipdown.js"></script>
     <title>Casamiento Lourdes y Nahuel</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,7 +49,8 @@
     <div>
         <p class="contador"></p>
     </div>
-
+    <div id="flipdown" class="flipdown"></div>
+    <div id="video"></div>
     <!--FrasePrincipal-->
     <div class="frasePrincipal">
         <p>¡A ponerse guapos que nos vamos a casar! Tenemos todo... el vestido, el traje, el coche, el fotógrafo, el salón... Pero nos falta lo más importante: ¡Contar con vos en este día tan especial!</p>
@@ -108,9 +111,16 @@
             <img id="insta" src="./images/instagram.png">
             <div>
                 <p>Queremos compartir nuestro dia tan especial a través de tus ojos. Comparti tus fotos utilizando el Hashtag</p>
-                <p id="hashtag">#LuleYNahu2022</p>
+                <p class="hashtag">#LuleYNahu2022</p>
                 <p style="color: lightseagreen;">¡Bebe, come y etiqueta!</p>
             </div>
+        </div>
+        <!--Card Covid-->
+        <div class="card">
+            <img id="barbijo" src="./images/face-mask.png">
+            <p>Pase Sanitario</p>
+            <p class="hashtag" style="margin-top: 10px;">¡ IMPORTANTE !</p>
+            <p class="importante">Debido a las medidas actuales se solicita tener la dosis de vacunacion COMPLETA</p>
         </div>
         <!--Card de codigo de vestimenta-->
         <div class="card">
@@ -121,7 +131,7 @@
                 <p class="aclaracion">*Todos los colores exceptuando blanco, crema, verde agua o similares.</p>
             </div>
         </div>
-    </div>
+    </div>   
     <!--Card del regalo-->
     <div class="card regalo">
         <img id="regalo" src="./images/regalo.png">

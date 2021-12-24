@@ -1,6 +1,6 @@
 "use strict"
 
-var countDownDate = new Date(1645227900000).getTime();
+/*var countDownDate = new Date(1645227900000).getTime();
 
 var x = setInterval(function() {
 
@@ -23,6 +23,27 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.querySelector(".contador").innerHTML = "ES HOY!";
+    document.querySelector(".contador").innerHTML =
+    `<video height="300px" width="500px" controls=1>
+      <source src="musica/Es hoy.mp4" type="video/mp4">
+    </video>`;
   }
-}, 1000);
+}, 1000);*/
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  var flipdown = new FlipDown(1645227900,{
+    headings:["dias", "horas", "minutos", "segundos"]})
+
+    // Start the countdown
+    flipdown.start()
+
+    // Do something when the countdown ends
+    flipdown.ifEnded(() => {
+      document.querySelector("#flipdown").innerHTML = '';
+      document.querySelector("#video").innerHTML = 
+      `<video height="180px" width="320px" controls=1 style="margin-top:-55px; margin-bottom:-20px;">
+        <source src="musica/Es hoy.mp4" type="video/mp4">
+      </video>`;
+    })})
